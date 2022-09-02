@@ -44,4 +44,6 @@ java_library {
     ],
     static_libs: ["xz-java","brotli-java"],
     sdk_version: "current",
+    // TODO(b/237039251) use "apex_inherit" when Java modules support it
+    min_sdk_version: "29",
 }
