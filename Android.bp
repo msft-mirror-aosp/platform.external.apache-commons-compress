@@ -51,4 +51,8 @@ java_library {
     sdk_version: "current",
     // TODO(b/237039251) use "apex_inherit" when Java modules support it
     min_sdk_version: "29",
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
